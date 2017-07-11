@@ -37,18 +37,18 @@
         delete vm.post;
       };
 
-      vm.createComment = function (postId, postIndex){
+      vm.createComment = function (post){
         let commentBody = {
           content: vm.content,
-          post_id: postId,
+          post_id: post.id,
         };
 
-        $http.post(`api/posts/${postId}/comments`, commentBody)
+        $http.post(`api/posts/${post.id}/comments`, commentBody)
           .then(res=>{
-            if(!vm.posts[postIndex].comments){
-              vm.posts[postIndex].comments = [];
+            if(!post.comments){
+              post.comments = [];
             }
-            vm.posts[postIndex].comments.push(commentBody);
+            post.comments.push(commentBody);
             delete vm.content;
           });
       };

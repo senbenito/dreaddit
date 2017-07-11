@@ -121,7 +121,7 @@
             <p ng-repeat="comment in post.comments track by $index">
               dreads be sayin: {{comment.content}}
             </p>
-            <form name="$ctrl.commentForm"  novalidate ng-submit="$ctrl.createComment(post.id, $index)" class="form-inline" >
+            <form name="$ctrl.commentForm"  novalidate ng-submit="$ctrl.createComment(post)" class="form-inline" >
               <div class="form-group">
                 <input class="form-control input-m" ng-model="$ctrl.content" placeholder="drop natty commentary" ng-required="true">
               </div>
