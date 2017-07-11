@@ -1,7 +1,7 @@
 # Dreaddit
-Live part-2 page: [Dreaddit](https://wry-noise.herokuapp.com/) 
+Live on Heroku part-2 (front- & back-end) page: [Dreaddit](https://wry-noise.herokuapp.com/) 
 
-Live part-1 page: [Dreaddit](http://wry-noise.surge.sh/)
+Live on Surge part-1 (front-end only) page: [Dreaddit](http://wry-noise.surge.sh/)
 
 Dreaddit is the product of [Zach](https://github.com/zpassarelli) and [Shannon](https://github.com/senbenito) to fulfill g49's Reddit Clone assignment parts 1 & 2 (learn more below).
 
