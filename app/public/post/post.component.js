@@ -19,7 +19,7 @@
         .then( res => {
           vm.posts = res.data;
       });
-      vm.order = 'vote_count';
+      vm.order = '-vote_count';
       vm.orderType = 'Votes';
     };
 
