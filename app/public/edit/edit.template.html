@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+        <div class="row">
+          <div class="col-md-8">
+
+            <form name="$ctrl.postEdit" ng-submit="$ctrl.updatePost()">
+              <div>
+                <label for="editTitle">BLESSUP, put de Title ere</label>
+                <input id="editTitle" name="editTitle" class="form-control" ng-value="$ctrl.post.title" ng-model="$ctrl.edit.title">
+              </div>
+              <div>
+                <label for="editBody">dis be where ya Body go</label>
+                <textarea id="editBody" name="editBody" class="form-control" ng-value="$ctrl.post.body" ng-model="$ctrl.edit.body"></textarea>
+              </div>
+              <div>
+                <label for="editAuthor">claim dis post as Author, bredda</label>
+                <input id="editAuthor" name="editAuthor" class="form-control"  ng-value="$ctrl.post.author" ng-model="$ctrl.edit.author">
+              </div>
+              <div>
+                <label for="editImage">dem irie Image URL (only iffya wannya own)</label>
+                <input type="url" id="editImage" name="editImage" class="form-control"  ng-value="$ctrl.post.image_url" ng-model="$ctrl.edit.image_url">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary postButton" value="Update">
+                  gwan, Update dis Post!!
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>

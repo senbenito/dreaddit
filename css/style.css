@@ -1,0 +1,48 @@
+body{
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/28/57/a0/2857a0ba84f1e660a586ed3141c23250.jpg);
+  color: white;
+}
+
+a,.nav>li>a:hover,.nav>li>a:focus,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover,.dropdown-menu,.open>.dropdown-menu,.dropdown-menu>li>a{
+  color: yellow;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.navbar{
+  background-image: url(http://wallpapercave.com/wp/wc1696891.jpg);
+  color: lime;
+  border: none;
+}
+
+button,.btn{
+  background-image: url(http://powerpictures.crystalgraphics.com/photo/green_red_yellow_grunge_wood_background_reggae_style_cg1p01982446c_th.jpg);
+  background-size: contain;
+  color: navy;
+  border-color: black;
+}
+
+.postButton{
+  margin-top: 20px;
+}
+
+.well{
+  background-color: rgba(0,0,0,0.4);
+  border: none;
+}
+
+.dreaddit-image{
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.error{
+  background-color: red;
+}
+
+.valid{
+  background-color: green;
+}
+
+.untouched{
+  background-color: transparent;
+}
