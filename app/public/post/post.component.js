@@ -60,7 +60,7 @@
           });
       };
 
-      vm.downVote = function(postId, postIndex){
+      vm.downVote = function(post){
         if (post.vote_count > 0){
           $http.delete(`api/posts/${post.id}/votes`)
             .then(res=>{
