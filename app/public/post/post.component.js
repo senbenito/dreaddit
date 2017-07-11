@@ -53,18 +53,18 @@
           });
       };
 
-      vm.upVote = function(postId, postIndex){
-        $http.post(`api/posts/${postId}/votes`)
+      vm.upVote = function(post){
+        $http.post(`api/posts/${post.id}/votes`)
           .then (res=>{
-            vm.posts[postIndex].vote_count +=1;
+            post.vote_count +=1;
           });
       };
 
       vm.downVote = function(postId, postIndex){
-        if (vm.posts[postIndex].vote_count > 0){
-          $http.delete(`api/posts/${postId}/votes`)
+        if (post.vote_count > 0){
+          $http.delete(`api/posts/${post.id}/votes`)
             .then(res=>{
-              vm.posts[postIndex].vote_count -=1;
+              post.vote_count -=1;
             });
           }
       };
